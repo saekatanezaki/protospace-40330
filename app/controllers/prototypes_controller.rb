@@ -26,12 +26,6 @@ class PrototypesController < ApplicationController
       @comments = @prototype.comments.includes(:user)
     end
 
-    # def edit
-    #   @prototype = Prototype.find(params[:id])
-    #   if @prototype.save
-    #   redirect_to edit_prototype_path(@prototype)
-    #   end
-    # end
 
     def update
       @prototype = Prototype.find(params[:id])
